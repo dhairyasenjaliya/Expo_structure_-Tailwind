@@ -1,0 +1,76 @@
+{
+  "name": "Demo",
+  "displayName": "Demo",
+  "expo": {
+    "name": "Demo",
+    "slug": "Demo",
+    "scheme": "Demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images-ignite/app-icon-all.png",
+    "splash": {
+      "image": "./assets/images-ignite/splash-logo-all.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#D1AB89"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "icon": "./assets/images-ignite/app-icon-android-legacy.png",
+      "package": "com.Demo",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images-ignite/app-icon-android-adaptive-foreground.png",
+        "backgroundImage": "./assets/images-ignite/app-icon-android-adaptive-background.png"
+      },
+      "splash": {
+        "image": "./assets/images-ignite/splash-logo-android-universal.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#D1AB89"
+      }
+    },
+    "ios": {
+      "icon": "./assets/images-ignite/app-icon-ios.png",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Demo",
+      "splash": {
+        "image": "./assets/images-ignite/splash-logo-ios-mobile.png",
+        "tabletImage": "./assets/images-ignite/splash-logo-ios-tablet.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#D1AB89"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images-ignite/app-icon-web-favicon.png",
+      "splash": {
+        "image": "./assets/images-ignite/splash-logo-web.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#D1AB89"
+      },
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": false
+          },
+          "android": {
+            "newArchEnabled": false
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  },
+  "ignite": {
+    "version": "9.7.0"
+  }
+}
